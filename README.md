@@ -29,7 +29,7 @@ We can get a chat id by sending a message to our bot, and then quickly running t
 uv run whisp bot-info
 ```
 
-On success, this will print a number which will be the `CHAT_ID`. Put this into our `.env` file.
+On success, this will print a number which will be the `TELEGRAM_CHAT_ID`. Put this into our `.env` file.
 
 Note: If it prints `None`, then send a new message and run the above command again.
 
