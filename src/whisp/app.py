@@ -31,17 +31,17 @@ def save_wav(audio: np.ndarray, folder: Path) -> Path:
     return path
 
 
-@app.command()
+@app.command(help="List avaiable audio devices")
 def devices() -> None:
     print(sd.query_devices())
 
 
-@app.command()
+@app.command(help="Get Telegram bot id")
 def bot_info():
     print(get_bot_id())
 
 
-@app.command()
+@app.command(help="Listen for commands")
 def listen(
     model: Annotated[str, typer.Option(help="Model")] = "small.en",
     device: Annotated[Optional[str], typer.Option(help="Model")] = None,
