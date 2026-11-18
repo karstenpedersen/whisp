@@ -1,5 +1,10 @@
 # whisp
 
+## Prerequisites
+
+- [uv](https://docs.astral.sh/uv/)
+- A Telegram account
+
 ## Setup
 
 The program needs an access token and chat id to a Telegram bot.
